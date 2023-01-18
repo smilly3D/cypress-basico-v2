@@ -206,7 +206,7 @@ describe("Central de Atendimento ao Cliente TAT", function () {
     });
   });
 
-  it.only("find a cat in app", () => {
+  it("find a cat in app", () => {
     cy.get("#cat").should("not.be.visible").invoke("show").should("be.visible");
     cy.get("#title").invoke("text", "CAT TAT");
     cy.get("#subtitle").invoke("text", "miau miau");
